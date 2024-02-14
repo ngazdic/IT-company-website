@@ -1,0 +1,305 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 26, 2023, 10:19:49 PM
+    Author     : nikolagazdic
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap');
+
+
+/*
+FONTS
+
+font-family: 'Anton', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
+
+
+
+
+/*GENERAL STYLE*/
+body{
+   
+    font-family: 'Lato', sans-serif;
+    color: #2C2D3C;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    
+    font-family: 'Anton', sans-serif;
+    
+     color: #6DD1FF;
+}
+
+img{
+    max-width:100%;
+    
+}
+
+
+
+/*HEADER*/
+
+.navbar-brand{
+    
+    max-width:50%;
+}
+
+.nav-item .nav-link{
+    
+    font-size: 16px;
+    color: #A8A8A8 ;
+     letter-spacing: 0.53px;
+  line-height: 19px;
+  border-bottom:2px #6DD1FF solid;
+ 
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    border-bottom: 0px #1085EA solid;
+}
+
+
+
+
+
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active{
+    
+    color:black;
+    background-color: #6DD1FF;
+     transition:all 0.2s ease-in;
+}
+
+/*MAIN*/
+
+/*main home*/
+.carousel-item{
+    background-repeat: no-repeat;
+    background-size: 90% 45%;
+    background-position:right 0% bottom 100%;
+    
+   
+   
+ 
+    
+    
+    
+}
+
+.caption{
+    
+    padding-top:345px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 320px;
+  
+}
+
+
+.general-btn{
+    
+    background:linear-gradient(139.4deg, #1085EA 0%, #0E9FE2 100%);
+       font-family: Anton;
+  font-size: 16px;
+  letter-spacing: 0.82px;
+  line-height: 26px;
+  text-align: center;
+  transition:0.3s all ease-in;
+  margin-bottom: 6px;/*ovo sam stavio jer button-u na 320px breakpointu i 576px breakpointu
+  fali malo prostora u home sekciji kad izadje iz okvira sa value transform, kad hoverujemo, bude deo sakriven
+  zbog elementa ispod*/
+  
+}
+
+.general-btn:hover{
+    
+    transform: scale(1.1);
+}
+
+.caption h1{
+    
+    font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+.caption p{
+    letter-spacing: 0.7px;
+  line-height: 26px;
+}
+
+
+
+
+.carousel-indicators li {
+ 
+  width: 11px;
+  height: 11px;
+  border-radius:50%;
+  margin-right: 10px;
+  background-color: #CCCCCC;
+ 
+}
+
+.carousel-indicators li.active{
+    
+     background-color:  #6DD1FF;
+}
+
+
+/*main about us*/
+
+
+
+
+
+.about-us{
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.about-item{
+    
+ 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.about-item-paragraph{
+    
+    color:white;
+}
+
+.item-title{
+    
+     font-size: 30px;
+  letter-spacing: 0.67px;
+  line-height: 50px;
+}
+
+/*main services*/
+
+.services article p{
+   
+    max-width: 174px;
+}
+
+.services-item{
+    transition:0.15s all linear;
+    bottom:0;
+    position:relative;
+}
+
+
+.services-item:hover{
+    
+    bottom:10px;
+}
+
+.services-item h4{
+     font-size: 20px;
+  letter-spacing: 0.71px;
+  line-height: 30px;
+}
+
+.services-item p{
+    font-size: 14px;
+  letter-spacing: 0.54px;
+  line-height: 26px;
+}
+
+.services-img{
+    
+    max-width:30%;
+}
+
+/*main-portfolio*/
+
+
+
+
+
+
+.portfolio-item a {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #1085EA;
+  font-family: 'Anton';
+  font-size: 15px;
+  letter-spacing: 0.82px;
+  line-height: 17px;
+  text-align: center;
+  padding: 5px 30px;
+  
+}
+
+.portfolio-item .general-btn:hover{
+    transform:scale(1);
+}
+
+.portfolio-item:hover a {
+  opacity: 1;
+}
+
+.portfolio-item{
+      overflow: hidden;
+    
+}
+
+.portfolio-item img{
+    transition: transform 0.3s ease-in-out;
+    
+          
+         
+    
+}
+
+.portfolio-item:hover img{
+     transform: scale(1.2);
+     
+    
+}
+
+
+
+
+/*contact*/
+
+.contact h2{
+    
+    padding-top:100px ;
+}
+
+.contact{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*footer*/
+
+footer .container .navbar a{
+    
+    margin-bottom:10px;
+}
+
+footer p{
+    
+     font-size: 14px;
+  letter-spacing: 0.72px;
+  line-height: 26px;
+}
